@@ -1,6 +1,6 @@
 <!-- Animated Header -->
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=26&pause=1000&color=00F7FF&center=true&vCenter=true&width=900&lines=Data+Scientist;AI+%26+ML+Engineer;LLMs+%7C+RAG+Systems+%7C+Reinforcement+Learning;Research+%26+Production-Grade+AI+Systems;Turning+Theory+into+Deployed+Intelligence" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=26&pause=1000&color=00F7FF&center=true&vCenter=true&width=900&lines=Data+Science;AI+%26+ML+Engineer;LLMs+%7C+RAG+Systems+%7C+Reinforcement+Learning;Research+%26+Production-Grade+AI+Systems;Turning+Theory+into+Deployed+Intelligence" />
 </p>
 
 ---
