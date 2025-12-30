@@ -13,10 +13,10 @@ My work bridges **theory → experimentation → deployment**, especially in **L
 ---
 
 ## 🚀 What I’m Currently Working On
-- 🔹 **RAG-based chatbots** and fine-tuning **LLM, TTS, and STT models** for low-resource languages  
-- 🔹 **Backend AI services** using **FastAPI**, async pipelines, and scalable ML architectures  
-- 🔹 **Reinforcement Learning systems** (SARSA, DQN, custom environments, simulation-driven learning)  
-- 🔹 **End-to-end ML pipelines** with experiment tracking, evaluation, and deployment  
+🔹 **RAG-based chatbots** and fine-tuning **LLM, TTS, and STT models** for low-resource languages  
+🔹 **Backend AI services** using **FastAPI**, async pipelines, and scalable ML architectures  
+🔹 **Reinforcement Learning systems** (SARSA, DQN, custom environments, simulation-driven learning)  
+🔹 **End-to-end ML pipelines** with experiment tracking, evaluation, and deployment  
 
 ---
 
@@ -65,10 +65,10 @@ My work bridges **theory → experimentation → deployment**, especially in **L
 ---
 
 ## 👯 Open to Collaborate On
-- 🔹 **AI/ML research projects** (NLP, RL, LLMs)  
-- 🔹 **Open-source AI tools** (chatbots, MLOps, automation)  
-- 🔹 **Simulation environments & agent-based systems**  
-- 🔹 Startup-focused **AI products & MVPs**
+🔹 **AI/ML research projects** (NLP, RL, LLMs)  
+🔹 **Open-source AI tools** (chatbots, MLOps, automation)  
+🔹 **Simulation environments & agent-based systems**  
+🔹 Startup-focused **AI products & MVPs**
 
 ---
 
