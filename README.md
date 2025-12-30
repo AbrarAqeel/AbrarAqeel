@@ -13,14 +13,16 @@ My work bridges **theory → experimentation → deployment**, especially in **L
 ---
 
 ## 🚀 What I’m Currently Working On
+
 🔹 **RAG-based chatbots** and fine-tuning **LLM, TTS, and STT models** for low-resource languages  
 🔹 **Backend AI services** using **FastAPI**, async pipelines, and scalable ML architectures  
-🔹 **Reinforcement Learning systems** (SARSA, DQN, custom environments, simulation-driven learning)  
+🔹 **Reinforcement Learning systems** (SARSA, DQN, custom environments, simulation-driven learning) 
 🔹 **End-to-end ML pipelines** with experiment tracking, evaluation, and deployment  
 
 ---
 
 ## 🧠 Research & Technical Interests
+
 🔹 Deep Reinforcement Learning & policy optimization  
 🔹 Retrieval-Augmented Generation (RAG) & vector search  
 🔹 Efficient LLM fine-tuning (LoRA, PEFT, distillation)  
@@ -33,6 +35,7 @@ My work bridges **theory → experimentation → deployment**, especially in **L
 
 ### 🔍 RAG-Based AI Systems
 **Context-Aware Chatbots & Knowledge Assistants**
+
 🔹 Built **RAG pipelines** using embeddings + vector databases  
 🔹 Integrated **custom GPT-style agents** with document retrieval  
 🔹 Optimized chunking, reranking, and latency for production use  
@@ -44,6 +47,7 @@ My work bridges **theory → experimentation → deployment**, especially in **L
 
 ### 🤖 Reinforcement Learning Agents
 **From Theory to Simulation**
+
 🔹 Implemented **SARSA, Q-Learning, DQN** from scratch  
 🔹 Designed **custom GridWorld & navigation environments**  
 🔹 Trained agents for **autonomous decision-making tasks**  
@@ -55,6 +59,7 @@ My work bridges **theory → experimentation → deployment**, especially in **L
 
 ### 🦾 Robotics & Embedded AI
 **Autonomous & Intelligent Systems**
+
 🔹 Built **robotic systems** integrating perception + control  
 🔹 Used **computer vision & RL-based logic** for navigation  
 🔹 Deployed models on **Arduino & Raspberry Pi**  
@@ -65,6 +70,7 @@ My work bridges **theory → experimentation → deployment**, especially in **L
 ---
 
 ## 👯 Open to Collaborate On
+
 🔹 **AI/ML research projects** (NLP, RL, LLMs)  
 🔹 **Open-source AI tools** (chatbots, MLOps, automation)  
 🔹 **Simulation environments & agent-based systems**  
@@ -73,6 +79,7 @@ My work bridges **theory → experimentation → deployment**, especially in **L
 ---
 
 ## 🤝 Looking For Help With
+
 🔹 Advanced **MLOps** (CI/CD for ML, monitoring, drift detection)  
 🔹 **Scaling LLM inference** & cost-efficient deployments  
 🔹 Research-level improvements in **RL algorithms**
@@ -80,6 +87,7 @@ My work bridges **theory → experimentation → deployment**, especially in **L
 ---
 
 ## 🌱 Currently Learning
+
 🔹 Advanced **Deep Reinforcement Learning**  
 🔹 Efficient **LLM fine-tuning & retrieval optimization**  
 🔹 **Production AI system design** for real-world scale  
@@ -87,6 +95,7 @@ My work bridges **theory → experimentation → deployment**, especially in **L
 ---
 
 ## 💬 Ask Me About
+
 🔹 Reinforcement Learning (SARSA, DQN, GridWorld, navigation)  
 🔹 RAG systems, custom GPTs, and NLP pipelines  
 🔹 FastAPI-based AI backends & ML project structuring  
@@ -94,11 +103,13 @@ My work bridges **theory → experimentation → deployment**, especially in **L
 ---
 
 ## ⚡ Fun Fact
+
 I enjoy turning **research papers into running systems** — from **LLM-powered chatbots** to **autonomous agents and robots** 🚀
 
 ---
 
 ## 🌐 Socials
+
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/abrar-aqeel-679194158)
 
 ---
@@ -106,11 +117,13 @@ I enjoy turning **research papers into running systems** — from **LLM-powered 
 ## 💻 Tech Stack
 
 ### Languages & Frameworks
+
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
 ![FastAPI](https://img.shields.io/badge/FastAPI-005571?style=for-the-badge&logo=fastapi)
 ![Flask](https://img.shields.io/badge/flask-%23000.svg?style=for-the-badge&logo=flask&logoColor=white)
 
 ### Machine Learning & AI
+
 ![PyTorch](https://img.shields.io/badge/PyTorch-%23EE4C2C.svg?style=for-the-badge&logo=PyTorch&logoColor=white)
 ![TensorFlow](https://img.shields.io/badge/TensorFlow-%23FF6F00.svg?style=for-the-badge&logo=TensorFlow&logoColor=white)
 ![Keras](https://img.shields.io/badge/Keras-%23D00000.svg?style=for-the-badge&logo=Keras&logoColor=white)
@@ -119,6 +132,7 @@ I enjoy turning **research papers into running systems** — from **LLM-powered 
 ![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white)
 
 ### MLOps & DevOps
+
 ![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white)
 ![mlflow](https://img.shields.io/badge/mlflow-%23d9ead3.svg?style=for-the-badge&logo=numpy&logoColor=blue)
 
