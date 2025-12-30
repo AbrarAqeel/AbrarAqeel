@@ -93,5 +93,3 @@ I enjoy building intelligent systems that move from research to real-world deplo
 ![Quote](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical)
 
 ---
-
-![Profile Views](https://visitcount.itsvg.in/api?id=AbrarAqeel&icon=0&color=0)
