@@ -126,11 +126,9 @@ I enjoy turning **research papers into running systems** — from **LLM-powered 
 
 ## 📊 GitHub Stats
 
-![Stats](https://github-readme-stats.vercel.app/api?username=AbrarAqeel&theme=dark&count_private=true)
-
-![Streak](https://nirzak-streak-stats.vercel.app/?user=AbrarAqeel&theme=dark)
-
-![Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=AbrarAqeel&theme=dark&layout=compact)
+![](https://github-readme-stats.vercel.app/api?username=AbrarAqeel&theme=dark&count_private=true)
+![](https://nirzak-streak-stats.vercel.app/?user=AbrarAqeel&theme=dark)
+![](https://github-readme-stats.vercel.app/api/top-langs/?username=AbrarAqeel&theme=dark&layout=compact)
 
 ---
 
