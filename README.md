@@ -21,11 +21,11 @@ My work bridges **theory → experimentation → deployment**, especially in **L
 ---
 
 ## 🧠 Research & Technical Interests
-- Deep Reinforcement Learning & policy optimization  
-- Retrieval-Augmented Generation (RAG) & vector search  
-- Efficient LLM fine-tuning (LoRA, PEFT, distillation)  
-- Autonomous agents & decision-making systems  
-- MLOps, monitoring, and inference optimization  
+🔹 Deep Reinforcement Learning & policy optimization  
+🔹 Retrieval-Augmented Generation (RAG) & vector search  
+🔹 Efficient LLM fine-tuning (LoRA, PEFT, distillation)  
+🔹 Autonomous agents & decision-making systems  
+🔹 MLOps, monitoring, and inference optimization  
 
 ---
 
@@ -33,10 +33,10 @@ My work bridges **theory → experimentation → deployment**, especially in **L
 
 ### 🔍 RAG-Based AI Systems
 **Context-Aware Chatbots & Knowledge Assistants**
-- Built **RAG pipelines** using embeddings + vector databases  
-- Integrated **custom GPT-style agents** with document retrieval  
-- Optimized chunking, reranking, and latency for production use  
-- Applied to **domain-specific knowledge systems**
+🔹 Built **RAG pipelines** using embeddings + vector databases  
+🔹 Integrated **custom GPT-style agents** with document retrieval  
+🔹 Optimized chunking, reranking, and latency for production use  
+🔹 Applied to **domain-specific knowledge systems**
 
 **Tech:** Python, FastAPI, FAISS, LangChain-style pipelines, Transformers  
 
@@ -44,10 +44,10 @@ My work bridges **theory → experimentation → deployment**, especially in **L
 
 ### 🤖 Reinforcement Learning Agents
 **From Theory to Simulation**
-- Implemented **SARSA, Q-Learning, DQN** from scratch  
-- Designed **custom GridWorld & navigation environments**  
-- Trained agents for **autonomous decision-making tasks**  
-- Experimented with reward shaping & policy evaluation  
+🔹 Implemented **SARSA, Q-Learning, DQN** from scratch  
+🔹 Designed **custom GridWorld & navigation environments**  
+🔹 Trained agents for **autonomous decision-making tasks**  
+🔹 Experimented with reward shaping & policy evaluation  
 
 **Tech:** PyTorch, NumPy, OpenAI Gym-style environments  
 
@@ -55,10 +55,10 @@ My work bridges **theory → experimentation → deployment**, especially in **L
 
 ### 🦾 Robotics & Embedded AI
 **Autonomous & Intelligent Systems**
-- Built **robotic systems** integrating perception + control  
-- Used **computer vision & RL-based logic** for navigation  
-- Deployed models on **Arduino & Raspberry Pi**  
-- Focused on real-world constraints and hardware-aware AI  
+🔹 Built **robotic systems** integrating perception + control  
+🔹 Used **computer vision & RL-based logic** for navigation  
+🔹 Deployed models on **Arduino & Raspberry Pi**  
+🔹 Focused on real-world constraints and hardware-aware AI  
 
 **Tech:** OpenCV, Python, Arduino, Raspberry Pi  
 
@@ -73,23 +73,23 @@ My work bridges **theory → experimentation → deployment**, especially in **L
 ---
 
 ## 🤝 Looking For Help With
-- Advanced **MLOps** (CI/CD for ML, monitoring, drift detection)  
-- **Scaling LLM inference** & cost-efficient deployments  
-- Research-level improvements in **RL algorithms**
+🔹 Advanced **MLOps** (CI/CD for ML, monitoring, drift detection)  
+🔹 **Scaling LLM inference** & cost-efficient deployments  
+🔹 Research-level improvements in **RL algorithms**
 
 ---
 
 ## 🌱 Currently Learning
-- Advanced **Deep Reinforcement Learning**  
-- Efficient **LLM fine-tuning & retrieval optimization**  
-- **Production AI system design** for real-world scale  
+🔹 Advanced **Deep Reinforcement Learning**  
+🔹 Efficient **LLM fine-tuning & retrieval optimization**  
+🔹 **Production AI system design** for real-world scale  
 
 ---
 
 ## 💬 Ask Me About
-- Reinforcement Learning (SARSA, DQN, GridWorld, navigation)  
-- RAG systems, custom GPTs, and NLP pipelines  
-- FastAPI-based AI backends & ML project structuring  
+🔹 Reinforcement Learning (SARSA, DQN, GridWorld, navigation)  
+🔹 RAG systems, custom GPTs, and NLP pipelines  
+🔹 FastAPI-based AI backends & ML project structuring  
 
 ---
 
@@ -125,8 +125,11 @@ I enjoy turning **research papers into running systems** — from **LLM-powered 
 ---
 
 ## 📊 GitHub Stats
+
 ![Stats](https://github-readme-stats.vercel.app/api?username=AbrarAqeel&theme=dark&count_private=true)
+
 ![Streak](https://nirzak-streak-stats.vercel.app/?user=AbrarAqeel&theme=dark)
+
 ![Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=AbrarAqeel&theme=dark&layout=compact)
 
 ---
@@ -135,5 +138,3 @@ I enjoy turning **research papers into running systems** — from **LLM-powered 
 ![Quote](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical)
 
 ---
-
-[![Profile Views](https://visitcount.itsvg.in/api?id=AbrarAqeel&color=0)](https://visitcount.itsvg.in)
