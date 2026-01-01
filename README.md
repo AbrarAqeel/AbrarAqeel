@@ -16,7 +16,7 @@ My work bridges **theory → experimentation → deployment**, especially in **L
 
 🔹 **RAG-based chatbots** and fine-tuning **LLM, TTS, and STT models** for low-resource languages  
 🔹 **Backend AI services** using **FastAPI**, async pipelines, and scalable ML architectures  
-🔹 **Reinforcement Learning systems** (SARSA, DQN, custom environments, simulation-driven learning) 
+🔹 **Reinforcement Learning systems** (SARSA, DQN, custom environments, simulation-driven learning)
 🔹 **End-to-end ML pipelines** with experiment tracking, evaluation, and deployment  
 
 ---
