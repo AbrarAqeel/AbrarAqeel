@@ -5,14 +5,14 @@
 
 ---
 
-## 💫 About Me
+## About Me
 
 I’m an **AI/ML Engineer & Research-Oriented Practitioner** focused on building **scalable, production-grade AI systems** and **research-driven models**.  
 My work bridges **theory → experimentation → deployment**, especially in **LLMs, Reinforcement Learning, and Applied NLP**.
 
 ---
 
-## 🚀 What I’m Currently Working On
+## What I’m Currently Working On
 
 🔹 **RAG-based chatbots** and fine-tuning **LLM, TTS, and STT models** for low-resource languages  
 🔹 **Backend AI services** using **FastAPI**, async pipelines, and scalable ML architectures  
@@ -21,7 +21,7 @@ My work bridges **theory → experimentation → deployment**, especially in **L
 
 ---
 
-## 🧠 Research & Technical Interests
+## Research & Technical Interests
 
 🔹 Deep Reinforcement Learning & policy optimization  
 🔹 Retrieval-Augmented Generation (RAG) & vector search  
@@ -31,9 +31,9 @@ My work bridges **theory → experimentation → deployment**, especially in **L
 
 ---
 
-## 🧪 Featured Projects
+## Featured Projects
 
-### 🔍 RAG-Based AI Systems
+### RAG-Based AI Systems
 **Context-Aware Chatbots & Knowledge Assistants**
 
 🔹 Built **RAG pipelines** using embeddings + vector databases  
@@ -45,7 +45,7 @@ My work bridges **theory → experimentation → deployment**, especially in **L
 
 ---
 
-### 🤖 Reinforcement Learning Agents
+### Reinforcement Learning Agents
 **From Theory to Simulation**
 
 🔹 Implemented **SARSA, Q-Learning, DQN** from scratch  
@@ -57,7 +57,7 @@ My work bridges **theory → experimentation → deployment**, especially in **L
 
 ---
 
-### 🦾 Robotics & Embedded AI
+### Robotics & Embedded AI
 **Autonomous & Intelligent Systems**
 
 🔹 Built **robotic systems** integrating perception + control  
@@ -69,7 +69,7 @@ My work bridges **theory → experimentation → deployment**, especially in **L
 
 ---
 
-## 👯 Open to Collaborate On
+## Open to Collaborate On
 
 🔹 **AI/ML research projects** (NLP, RL, LLMs)  
 🔹 **Open-source AI tools** (chatbots, MLOps, automation)  
@@ -78,7 +78,7 @@ My work bridges **theory → experimentation → deployment**, especially in **L
 
 ---
 
-## 🤝 Looking For Help With
+## Looking For Help With
 
 🔹 Advanced **MLOps** (CI/CD for ML, monitoring, drift detection)  
 🔹 **Scaling LLM inference** & cost-efficient deployments  
@@ -86,7 +86,7 @@ My work bridges **theory → experimentation → deployment**, especially in **L
 
 ---
 
-## 🌱 Currently Learning
+## Currently Learning
 
 🔹 Advanced **Deep Reinforcement Learning**  
 🔹 Efficient **LLM fine-tuning & retrieval optimization**  
@@ -94,7 +94,7 @@ My work bridges **theory → experimentation → deployment**, especially in **L
 
 ---
 
-## 💬 Ask Me About
+## Ask Me About
 
 🔹 Reinforcement Learning (SARSA, DQN, GridWorld, navigation)  
 🔹 RAG systems, custom GPTs, and NLP pipelines  
@@ -102,19 +102,19 @@ My work bridges **theory → experimentation → deployment**, especially in **L
 
 ---
 
-## ⚡ Fun Fact
+## Fun Fact
 
 I enjoy turning **research papers into running systems** — from **LLM-powered chatbots** to **autonomous agents and robots** 🚀
 
 ---
 
-## 🌐 Socials
+## Socials
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/abrar-aqeel-679194158)
 
 ---
 
-## 💻 Tech Stack
+## Tech Stack
 
 ### Languages & Frameworks
 
@@ -138,17 +138,7 @@ I enjoy turning **research papers into running systems** — from **LLM-powered 
 
 ---
 
-## 📊 GitHub Stats
-
-![](https://github-readme-stats.vercel.app/api?username=AbrarAqeel&theme=dark&hide_border=false&include_all_commits=true&count_private=true)
-
-![](https://nirzak-streak-stats.vercel.app/?user=AbrarAqeel&theme=dark&hide_border=false)
-
-![](https://github-readme-stats.vercel.app/api/top-langs/?username=AbrarAqeel&theme=dark&hide_border=false&layout=compact)
-
----
-
-### ✍️ Random Dev Quote
+### Random Dev Quote
 ![Quote](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical)
 
 ---
