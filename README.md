@@ -40,7 +40,7 @@ Production ML architecture & deployment
 
 ### NADRA Multilingual RAG Assistant
 
-[View Repository](https://github.com/AbrarAqeel/NADRA_RAG_Chatbot) | [Architecture Docs](https://github.com/AbrarAqeel/NADRA_RAG_Chatbot/tree/master/docs)
+[View Repository](https://github.com/AbrarAqeel/NADRA_RAG_Chatbot)
 
 **Bilingual (English/Urdu) conversational RAG system for citizen services with a live, lip-synced avatar.**
 
