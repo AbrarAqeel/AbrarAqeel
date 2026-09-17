@@ -38,99 +38,82 @@ Production ML architecture & deployment
 
 ## Featured Projects
 
-### Agentic RAG & Conversational Systems
+### NADRA Multilingual RAG Assistant
 
-**NADRA Multilingual RAG Assistant** (Final Year Project)
+[View Repository](https://github.com/AbrarAqeel/NADRA_RAG_Chatbot) | [Architecture Docs](https://github.com/AbrarAqeel/NADRA_RAG_Chatbot/tree/master/docs)
 
-Bilingual (English/Urdu) RAG assistant for citizen services (CNIC, B-Form, NICOP) with a live, lip-synced Simli avatar over WebRTC. Uses FastAPI backend, Groq (Llama 3.3) for generation, faster-whisper for speech-to-text, and cross-encoder-reranked ChromaDB retrieval with automatic Urdu normalization.
+**Bilingual (English/Urdu) conversational RAG system for citizen services with a live, lip-synced avatar.**
 
-**Tech:** FastAPI, Groq, faster-whisper, ChromaDB, Cross-Encoder Reranking, Simli WebRTC, Sentence Transformers
+This was my final year project and a technical exploration of production RAG complexity. The system retrieves answers strictly from a curated NADRA knowledge base and speaks responses through a Simli avatar over WebRTC.
 
----
+**Why it stands out:**
 
-**Quran QA System (QuranChatBot)**
+- **Bilingual RAG at scale**: Separate ChromaDB collections per language (`nadra_en`, `nadra_ur`) with automatic language detection from both text and speech. Cross-lingual query normalization layer converts Hindi/Arabic/Farsi/Punjabi to Urdu before retrieval.
+- **Avatar integration**: Real-time TTS (gTTS) → 16kHz PCM audio → Simli WebRTC. Graceful fallback if Simli is unreachable — keeps text + audio playback working.
+- **Reranking architecture**: Top-15 ChromaDB candidates → cross-encoder (`ms-marco-MiniLM-L-6-v2`) rerank → keep top-5 for LLM. This two-stage approach catches false positives that lexical search alone misses.
+- **Production deployment**: Docker image with CUDA base for Hugging Face Spaces. Runs locally on CPU in ~2s per query.
+- **Conversation memory**: Last 10 turns inform both query enhancement and answer generation, supporting genuine multi-turn follow-ups.
 
-Fully offline, privacy-preserving RAG system combining Sentence Transformer embeddings, Qdrant vector search, and cross-encoder reranking. Local LLM reasoning via Ollama with word-level Urdu pronunciation support.
-
-**Tech:** Qdrant, Sentence Transformers, Ollama, Cross-Encoder Reranking, Urdu NLP
-
----
-
-**AI Support Desk with Knowledge Routing Agent**
-
-LangGraph-based multi-source support assistant that deterministically routes queries across PostgreSQL knowledge bases, ChromaDB storage, and external APIs while maintaining multi-turn conversation context.
-
-**Tech:** LangGraph, LangChain, PostgreSQL, ChromaDB, Multi-turn reasoning, API integration
+**Tech:** FastAPI | Groq (Llama 3.3) | faster-whisper | ChromaDB + Cross-Encoder Reranking | React + Vite | Simli WebRTC | Docker
 
 ---
 
-**Multi-LLM Chat Interface (Psych Bot)**
+### AI Support Desk with Knowledge Routing Agent
 
-Streamlit application interfacing with multiple open-source LLMs (Llama 3.2, Falcon-7B, Gemma) via Hugging Face Inference API with per-model conversation state management.
+[View Repository](https://github.com/AbrarAqeel/AI_SupportDesk_with_KnowledgeRoutingAgent)
 
-**Tech:** Streamlit, Hugging Face Inference API, Multiple LLM backends, State management
+**Deterministic multi-source agent that routes queries to PostgreSQL, vector knowledge base, or external APIs based on intent classification.**
 
----
+This project was a deep dive into **when to use agents vs. simple RAG**. Instead of throwing everything at an LLM, it uses explicit rule-based routing to ensure data authority — the right query hits the right source.
 
-### Reinforcement Learning
+**Why it stands out:**
 
-**Autonomous Drone Navigation (SARSA-λ)**
+- **Deterministic routing over semantic search**: A `RouterNode` classifies intent based on signal word priority (e.g., "ticket ID" → PostgreSQL, "how to" → vector DB, "weather" → external API). No hallucinations about which source to check first.
+- **Multi-source coordination**: Single LangGraph that orchestrates PostgreSQL queries, ChromaDB retrieval, and fallback API calls in a single turn. Conversation context flows through all three branches.
+- **Conversation memory strategy**: Sliding window of last 10 messages — cheap to maintain, enough for follow-ups ("tell me more about that ticket").
+- **Testing-first architecture**: `/testing` folder has phase-by-phase unit tests. You can verify the router logic independently of the graph, and the graph independently of the UI.
+- **Clean separation of concerns**: `/router` handles classification logic; `/tools` wraps PostgreSQL/ChromaDB/API calls; `/graph` wires everything together. Easy to swap out any layer.
 
-Custom 2D grid environment with SARSA(λ) agent using eligibility traces. Includes Q-value heatmap visualizations for behavioral analysis and learned policy inspection.
-
-**Tech:** PyTorch, NumPy, OpenAI Gym-style environments, Eligibility traces
-
----
-
-**Q-Learning Maze Solver**
-
-On-policy SARSA agent trained on procedurally generated, seed-reproducible mazes with reward-curve tracking and success-rate reporting.
-
-**Tech:** PyTorch, Custom maze generation, On-policy learning
+**Tech:** LangGraph + LangChain | FastAPI | Streamlit | PostgreSQL | ChromaDB | Rule-based classification
 
 ---
 
-**CartPole DQN Control**
+### Voice AI Patient Intake
 
-Deep Q-Network agent with experience replay buffer and target network on custom CartPole-v1 reward dynamics.
+[View Repository](https://github.com/AbrarAqeel/VoiceAIAgent)
 
-**Tech:** PyTorch, DQN, Experience replay, Target networks
+**Production-deployed voice-based registration system: caller dials a Vapi number, speaks naturally with an AI intake coordinator (Maya), and data persists to a REST API.**
 
----
+This project showcases **voice AI integration done right** — working with Vapi's tool-calling protocol, proper error handling, and live deployment.
 
-### Computer Vision & Edge AI
+**Why it stands out:**
 
-**Purse Visual Retrieval System**
+- **Vapi protocol correctness**: The Vapi webhook expects `{ "message": { "type": "tool-calls", ... } }` and responses must be `{ "results": [...] }` — documentation is sparse, but the code gets this right and documents the quirk for future developers.
+- **Live deployment**: Running on Railway with a real US phone number (+1 434-290-7724). No ngrok, no local machine requirement. FastAPI health checks and graceful error handling.
+- **Tool-based CRUD**: Vapi tools (`create_patient`, `find_patient_by_phone`, `update_patient`) map to FastAPI endpoints. Duplicate detection is smart — same phone number can update an existing record or reject if already active (prevents double-booking).
+- **Soft-delete semantics**: Patients can be soft-deleted without losing historical data; phone numbers become reusable after deletion.
+- **Validation on the server side**: Names, DOB (not in future), US phone format, state, ZIP, enum-based sex field, email. The API is defensive.
 
-Two-stage visual search pipeline: YOLOv8 detection → DINOv2 instance embeddings → FAISS cosine-similarity retrieval. Margin-based filtering for precision, served via Streamlit with incremental indexing.
-
-**Tech:** YOLOv8, DINOv2, FAISS, Streamlit, Visual search optimization
-
----
-
-**Wake Word Detection**
-
-CNN/Transformer models with TFLite post-training quantization for low-latency, on-device inference.
-
-**Tech:** TensorFlow, Keras, TFLite quantization, Model compression
+**Tech:** Vapi (voice + LLM + STT/TTS) | FastAPI | SQLite | Railway | REST API
 
 ---
 
-**Fraud Detection Gateway**
+### Purse Visual Retrieval System
 
-Dockerized FastAPI microservice combining Tesseract OCR receipt parsing with SMOTE-balanced Random Forest classification, exposed via REST API.
+[View Repository](https://github.com/AbrarAqeel/Purse_Retrieval)
 
-**Tech:** FastAPI, Tesseract OCR, Scikit-learn, Docker, SMOTE balancing
+**Two-stage computer vision pipeline: detect purses in photos, embed them with DINOv2, retrieve similar purses from a FAISS index.**
 
----
+This is a **real-world search problem** — how do you match a queried purse to models in your dataset without training a custom classifier?
 
-### Full-Stack & Software Engineering
+**Why it stands out:**
 
-**Auto Assigner**
+- **Model choice reasoning**: YOLOv8 for detection (COCO "handbag" class is reliable), but crucially **DINOv2 over CLIP** for embeddings. DINOv2 is trained for instance-level similarity ("is this the *same* object"), while CLIP optimizes for semantic similarity ("same *kind* of object") — unrelated bags with similar color would score too close in CLIP.
+- **Incremental indexing**: `build_index.py` is a one-time operation. Photos → detection → in-memory crop (never saved) → embedding → FAISS. If the index exists, only new photos are processed. `streamlit run main.py` only loads and searches — keeps the app snappy.
+- **Tunable precision-recall**: Two knobs in `config.py` — `SIMILARITY_THRESHOLD` (hard floor) and `MATCH_MARGIN` (relative spread filter). Results too strict? Adjust and rerun. Results too loose? Tighten. The code even provides a shell helper to see raw similarity scores before filtering.
+- **Modular architecture**: `/core/detection.py`, `/core/embedding.py`, `/core/indexer.py`, `/core/search.py` — each responsibility isolated. Easy to swap DINOv2 for a fine-tuned model later.
 
-Flask + MySQL ticketing platform with role-based dashboards (customer, supervisor, agent) and priority-weighted round-robin ticket assignment engine.
-
-**Tech:** Flask, MySQL, Role-based access control, Scheduling algorithms
+**Tech:** YOLOv8 | DINOv2 | FAISS | Streamlit | Incremental indexing
 
 ---
 
@@ -203,7 +186,7 @@ I enjoy turning research papers into production systems — from multilingual RA
 ### Computer Vision & Speech
 
 ![OpenCV](https://img.shields.io/badge/OpenCV-%235C3EE8.svg?style=for-the-badge&logo=opencv&logoColor=white)
-![YOLOv8](https://img.shields.io/badge/YOLOv8-%23013243.svg?style=for-the-badge&logo=yolo&logoColor=white)
+![YOLOv8](https://img.shields.io/badge/YOLOv8-%23013243.svg?style=for-the-badge)
 
 ### Data Science & Tooling
 
